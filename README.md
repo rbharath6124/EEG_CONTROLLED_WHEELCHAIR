@@ -181,7 +181,7 @@ Turning Left
 
 ## Contributors
 
-- Developed by a team of 7 during the BITS College Hackathon, March 21, 2025.
+- Developed by a team Watermelon during the BITS College Hackathon, March 22, 2025.
 
 - Battery life is limited for MindWave and other components of the wheelchair, we need good power management.
 
