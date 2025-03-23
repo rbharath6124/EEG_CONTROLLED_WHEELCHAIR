@@ -93,18 +93,50 @@ With 7 team members, tasks are divided as follows:
 
 - **Member 7**: Future enhancements (e.g., obstacle detection, digital twin in Unreal Engine 5).
 
-## Wiring Diagram
-Arduino Uno       HC-05         L298N Motor Driver      ZK-2WD Motors
-5V  ---------> VCC           VCC ---------> 12V Battery
-GND ---------> GND           GND ---------> Arduino GND
-Pin 10 ------> RXD           IN1 ---------> Pin 5
-Pin 11 ------> TXD           IN2 ---------> Pin 6
-IN3 ---------> Pin 7
-IN4 ---------> Pin 8
-ENA ---------> Pin 3 (PWM)
-ENB ---------> Pin 9 (PWM)
-OUT1, OUT2 --> Left Motor
-OUT3, OUT4 --> Right Motor
+# Wiring Diagram for Arduino-Based Motor Control
+
+This project connects an **Arduino Uno** with an **HC-05 Bluetooth Module**, an **L298N Motor Driver**, and **ZK-2WD Motors** to control a robotic system wirelessly.
+
+## Components
+- **Arduino Uno**
+- **HC-05 Bluetooth Module**
+- **L298N Motor Driver**
+- **ZK-2WD Motors**
+- **12V Battery**
+
+## Wiring Connections
+
+### Arduino Uno to HC-05 Bluetooth Module
+| Arduino Uno | HC-05 |
+|------------|------|
+| 5V         | VCC  |
+| GND        | GND  |
+| Pin 10     | RXD  |
+| Pin 11     | TXD  |
+
+### Arduino Uno to L298N Motor Driver
+| Arduino Uno | L298N |
+|------------|------|
+| GND        | GND  |
+| Pin 5      | IN1  |
+| Pin 6      | IN2  |
+| Pin 7      | IN3  |
+| Pin 8      | IN4  |
+| Pin 3 (PWM)| ENA  |
+| Pin 9 (PWM)| ENB  |
+
+### L298N Motor Driver to Motors and Power Supply
+| L298N       | Connection |
+|------------|-----------|
+| VCC        | 12V Battery |
+| GND        | Arduino GND |
+| OUT1, OUT2 | Left Motor |
+| OUT3, OUT4 | Right Motor |
+
+## Notes
+- Ensure proper power connections to avoid damage to components.
+- PWM-enabled pins (ENA and ENB) allow speed control for the motors.
+- The HC-05 Bluetooth module enables wireless control.
 
 - For a detailed visual, refer to [ARCHITECTURE_DIAGRAM.jpg](ARCHITECTURE_DIAGRAM.jpg)
 
