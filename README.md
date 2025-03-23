@@ -93,7 +93,27 @@ With 7 team members, tasks are divided as follows:
 
 - **Member 7**: Future enhancements (e.g., obstacle detection, digital twin in Unreal Engine 5).
 
+## Wiring Diagram
+Arduino Uno       HC-05         L298N Motor Driver      ZK-2WD Motors
+5V  ---------> VCC           VCC ---------> 12V Battery
+GND ---------> GND           GND ---------> Arduino GND
+Pin 10 ------> RXD           IN1 ---------> Pin 5
+Pin 11 ------> TXD           IN2 ---------> Pin 6
+IN3 ---------> Pin 7
+IN4 ---------> Pin 8
+ENA ---------> Pin 3 (PWM)
+ENB ---------> Pin 9 (PWM)
+OUT1, OUT2 --> Left Motor
+OUT3, OUT4 --> Right Motor
 
+- For a detailed visual, refer to [ARCHITECTURE_DIAGRAM.jpg](ARCHITECTURE_DIAGRAM.jpg)
+
+## Demo
+- **Serial Monitor Output**: Example output showing EEG data and wheelchair commands:
+PoorQuality: 0 Attention: 83 BlinkStrength: 0
+Moving Forward 
+PoorQuality: 0 Attention: 45 BlinkStrength: 60
+Turning Left
 
 ## Getting Started
 
