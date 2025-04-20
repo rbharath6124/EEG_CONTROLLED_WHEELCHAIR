@@ -185,4 +185,4 @@ Turning Left
 
 - Battery life is limited for MindWave and other components of the wheelchair, we need good power management.
 
-- Ensuring user safety during navigation without obstacle detection sensors.
+- Ensuring user safety during navigation without obstacle detection sensors
