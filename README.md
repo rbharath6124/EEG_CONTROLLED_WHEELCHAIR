@@ -1,4 +1,4 @@
-# EEG_CONTROLLED_WHEELCHAIR
+# EEG_CONTROLLED_WHEELCHAIR 
 
 ## Problem Statement
 The EEG powered wheelchair allows bounded wheelchair users whose physical limitation severely limits their ability to move. By collecting and processing EEG inputs from a NeuroSky MindWave Mobile smartphone, we have created a non-invasive device that can be powered by an Arduino Uno and a Bluetooth module in order to take charge of the ZK-2WD Robot Car kit with an L298N motor driver, which will give priority to attention and blink strength associated with forward movement to move the wheelchair and stop, left movement and right movement.
